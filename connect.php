@@ -1,10 +1,8 @@
 <?php
-	require_once('config.php')
+	require_once ('config.php');
 	//连库
-	if(mysql_connect('localhost','root','root')){
-		echo '连接成功';
-	}else{
-		echo '连接失败';
+	if(!($con = mysql_connect(HOST, USERNAME, PASSWORD))){
+		echo mysql_error();
 	}
 	//选库
 	if(!mysql_select_db('test')){
