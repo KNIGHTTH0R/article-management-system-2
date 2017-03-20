@@ -12,4 +12,4 @@ content text not null,
 
 dateline int(11) not null default 0
 
-);
+)ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
